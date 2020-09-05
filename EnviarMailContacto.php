@@ -30,8 +30,8 @@ $cuerpo.='</body></html>';
 enviarmail($destinatario,$asunto,$cuerpo,'','',$email);
 
 echo '<style>';
-include("assets/css/main.css");
-include("assets/css/font-awesome.min.css");
+include("css/main.css");
+include("css/font-awesome.min.css");
 echo '</style>';
 
 echo '
