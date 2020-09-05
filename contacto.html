@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- build:css dist/contacto.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">    
+    <link rel="stylesheet" href="css/styles.css">
+		<meta name="description" content="Soluciones informáticas para pequeñas y medianas empresas (Pymes). Contactate ante cualquier inquietud. Dejanos un mensaje en el formulario. Presupuestos personalizados." />
+		<meta name="keywords" content="Contacto, Consulta, Formulario, Ayuda, Atención al cliente, Pymesoft" />
+		<link rel="icon" href="./images/logo.png">
+
+    <!-- endbuild -->
+
+    <title>Contacto | Pymesoft</title>
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="index.html">Hoteles</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item-active"><a class="nav-link" href="index.html">Inicio</a></li>        
+          <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte</a></li>                    
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>                    
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>              
+              <li class="breadcrumb-item active" aria-current="page">Contacto</li>              
+            </ol>
+          </nav>
+          <h1>Dejame tu comentario</h1>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-sm-6">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">                
+              </div>              
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingrese su email">                
+            </div>                
+            <div class="form-row">
+              <div class="form-group col-sm-9">
+                <label for="domicilio">Domicilio</label>
+                <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+              </div>
+              <div class="form-group col-sm-3">
+                <label for="provincia">Provincia</label>
+                <select id="provincia" class="form-control">
+                  <option selected>Capital Federal</option>
+                  <option>Buenos Aires</option>                  
+                  <option>Córdoba</option>                  
+                  <option>Santa Fe</option> 
+                  <option>Mendoza</option>                                                                       
+                </select>
+              </div>              
+            </div> 
+            <div class="form-group">
+              <label for="comentario">Comentario</label>
+              <textarea id="comentario" class="form-control" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">Quiero que me contacten</label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+    </div>
+  <footer class="footer">
+    <div class="row">
+        <div class="col-sm-4 d-flex flex-column">
+          <a href="htpps://www.facebook.com">Facebook</a>
+          <a href="htpps://www.instagram.com">Instagram</a>
+          <a href="htpps://www.linkedin.com">Linkedin</a>          
+        </div>
+    </div>
+  </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- build:js dist/contacto.css -->    
+    <script src="node_modules/jQuery/dist/jQuery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+        $("[data-toggle='tooltip']").tooltip();
+        $("[data-toggle='popover']").popover();
+      });
+    </script>    
+    <!-- endbuild -->
+  </body>
+</html>

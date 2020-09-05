@@ -1,0 +1,29 @@
+$footer: #333333;
+@mixin margenes ($top, $bottom){
+    margin-top: $top;    
+    margin-bottom: $bottom;
+}
+
+.footer {
+    padding: 10px 10px 0 10px;
+    background-color: $footer;
+    @include margenes(10px, 0px);
+}
+
+.card-sistema {
+   flex: 1 200px;
+   @include margenes(10px, 0px);
+}
+
+.btn-info {
+    width: 100%;
+    border-radius: 0;
+}
+
+.footer-address-icon {
+    padding-right: 10px;
+}
+
+.tab-content {
+    padding-top: 10px;
+}
