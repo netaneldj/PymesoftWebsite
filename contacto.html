@@ -27,12 +27,8 @@
 		<meta name="keywords" content="Contacto, Consulta, Formulario, Ayuda, Atención al cliente, Pymesoft" />
     <link rel="icon" href="./images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
-		<script language="JavaScript" type="text/JavaScript">
-		<?php
-		include("./js/index.js");
-		include_once("function.php");
-		?>
-    </script>    
+    <script src="js/index.js"></script>    
+    <?php include 'function.php';include 'EnviarMailContacto.php';?>
     <!-- endbuild -->
 
     <title>Contacto | Pymesoft</title>
@@ -137,7 +133,7 @@
           </div>
         </div>
       </div>
-      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <div class="footer-copyright text-center py-3">© 2020 Copyright
         <a href="http://pymesoft.com.ar/"> Pymesoft Argentina</a>
       </div>
     </footer>
@@ -147,7 +143,7 @@
     <!-- build:js dist/contacto.css -->    
     <script src="node_modules/jQuery/dist/jQuery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
     <script>
       $(function(){
         $("[data-toggle='tooltip']").tooltip();
