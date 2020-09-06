@@ -63,7 +63,7 @@ function RetAjaxWeb() {
 function contacto() {
     var rs=ajaxPantTrabajo.readyState;
     if (rs==0 || rs==4){
-        var consulta='contacto.php';
+        var consulta='contacto.html';
         ajaxPantTrabajo.open("POST",consulta);
         ajaxPantTrabajo.onreadystatechange=RetAjaxContacto;
         ajaxPantTrabajo.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -91,7 +91,7 @@ function EnviarMailContacto() {
     	var email = objEmail.value;
     	var telefono = objTelefono.value;
     	var mensaje = objMensaje.value;
-        var request='EnviarMailContacto.php?nombre='+nombre+'&empresa='+empresa+'&email='+email+'&telefono='+telefono+'&mensaje='+mensaje;
+        var request='EnviarMailcontacto.html?nombre='+nombre+'&empresa='+empresa+'&email='+email+'&telefono='+telefono+'&mensaje='+mensaje;
         ajaxPantTrabajo.open("POST",request);
         ajaxPantTrabajo.onreadystatechange=RetAjaxEnviarMailContacto;
         ajaxPantTrabajo.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
