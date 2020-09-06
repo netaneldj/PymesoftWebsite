@@ -11,7 +11,7 @@
     "watch:scss": "onchange 'css/*.scss' -- npm run scss ",
     "clean": "rimraf dist",
     "imagemin": "imagemin images/* --out-dir dist/images",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html && usemin estacionamiento.html -d dist --htmlmin -o dist/estacionamiento.html && usemin comercial.html -d dist --htmlmin -o dist/comercial.html && usemin personal.html -d dist --htmlmin -o dist/personal.html && usemin seguros.html -d dist --htmlmin -o dist/seguros.html && usemin soporte.html -d dist --htmlmin -o dist/soporte.html && usemin sueldos.html -d dist --htmlmin -o dist/sueldos.html",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html && usemin estacionamiento.html -d dist --htmlmin -o dist/estacionamiento.html && usemin comercial.html -d dist --htmlmin -o dist/comercial.html && usemin personal.html -d dist --htmlmin -o dist/personal.html && usemin seguros.html -d dist --htmlmin -o dist/seguros.html && usemin soporte.html -d dist --htmlmin -o dist/soporte.html && usemin sueldos.html -d dist --htmlmin -o dist/sueldos.html && usemin function.php -d dist --htmlmin -o dist/function.php && usemin EnviarMailContacto.php -d dist --htmlmin -o dist/EnviarMailContacto.php",
     "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {

@@ -7,6 +7,7 @@
 .footer {
   padding: 10px 10px 0 10px;
   background-color: #333333;
+  color: white;
   margin-top: 10px;
   margin-bottom: 0px; }
 
@@ -18,9 +19,6 @@
 .btn-info {
   width: 100%;
   border-radius: 0; }
-
-.footer-address-icon {
-  padding-right: 10px; }
 
 .tab-content {
   padding-top: 10px; }
