@@ -27,14 +27,12 @@
 		<meta name="keywords" content="Contacto, Consulta, Formulario, Ayuda, Atención al cliente, Pymesoft" />
     <link rel="icon" href="./images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/index.js"></script>    
-    <?php include 'function.php';?>
     <!-- endbuild -->
 
     <title>Contacto | Pymesoft</title>
   </head>
   
-  <body class="is-preload" onload='EjecutarAlInicio()'>
+  <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="index.html">Pymesoft</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,8 +84,8 @@
         </dd>
         <br>
         <h3>Contacto</h3>          
-          <form method="post">
-            <div class="form-row" id="PantTrabajo">
+          <form action="mail.php" method="POST">
+            <div class="form-row">
               <div class="form-group col-sm-6">
                 <label for="nombre">Nombre</label>
                 <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
@@ -111,7 +109,7 @@
               <label for="mensaje">Comentario</label>
               <textarea name="mensaje" id="mensaje" class="form-control" rows="10" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" onClick="EnviarMailContacto()">Enviar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
             <button type="reset" class="btn btn-danger">Limpiar</button>            
           </form>
     </div>
