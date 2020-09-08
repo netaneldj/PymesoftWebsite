@@ -19,11 +19,15 @@
 		  gtag('config', 'UA-131497396-1');
 		</script>    
     <!-- Bootstrap CSS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->    
     <!-- build:css dist/index.css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />    
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />        
+    <link rel="stylesheet" href="css/styles.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
 		<meta name="description" content="Soluciones informáticas para pequeñas y medianas empresas (Pymes). Sistema de gestión y administración para empresas, brokers de seguros, playas de estacionamiento y control de personal. Presupuestos personalizados. Factura electrónica." />
 		<meta name="keywords" content="Sistema de gestión, Sistema administración, Sistema seguros, Factura electrónica, Control asistencia, liquidación de sueldos, sueldos, F931, libro sueldos digital, Anviz" />
 		<meta property="og:image" content="http://pymesoft.com.ar/images/logo.png">
@@ -57,53 +61,65 @@
           <li class="breadcrumb-item active" aria-current="page">Inicio</li>
         </ol>                
       </nav>
-      <br>
+      <br>   
+
       <div id="carouselControls" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#slide" data-slide-to="0" class="active"></li>
+          <li data-target="#slide" data-slide-to="1"></li>
+          <li data-target="#slide" data-slide-to="2"></li>
+          <li data-target="#slide" data-slide-to="3"></li>
+          <li data-target="#slide" data-slide-to="4"></li>
+          <li data-target="#slide" data-slide-to="5"></li>
+          <li data-target="#slide" data-slide-to="6"></li>
+          <li data-target="#slide" data-slide-to="7"></li>
+        </ul>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <a href="personal.html">
-              <img class="d-block w-100" src="images/Personal.png" class="img-fluid" alt="Control de Personal">
+              <img src="images/Personal.png" class="d-block w-100 img-fluid" alt="Control de Personal">
             </a>
           </div>
           <div class="carousel-item">
             <a href="personal.html">
-              <img class="d-block w-100" src="images/A300.png" alt="A300 Pymesoft">
+              <img src="images/A300.png" class="d-block w-100 img-fluid" alt="A300 Pymesoft">
             </a>
           </div>
           <div class="carousel-item">
             <a href="personal.html">
-              <img class="d-block w-100" src="images/EP300.png" alt="EP300 Pymesoft">
+              <img src="images/EP300.png" class="d-block w-100 img-fluid" alt="EP300 Pymesoft">
             </a>
-          </div>                    
+          </div>
           <div class="carousel-item">
             <a href="sueldos.html">
-              <img class="d-block w-100" src="images/Sueldos.png" alt="Liquidación de Sueldos">
+              <img src="images/Sueldos.png" class="d-block w-100 img-fluid" alt="Liquidación de Sueldos">
             </a>
-          </div>                              
+          </div>         
           <div class="carousel-item">
             <a href="comercial.html">
-              <img class="d-block w-100" src="images/Comercial.png" alt="Gestión Comercial">
+              <img src="images/Comercial.png" class="d-block w-100 img-fluid" alt="Gestión Comercial">
             </a>
-          </div>   
+          </div>           
           <div class="carousel-item">
             <a href="seguros.html">
-              <img class="d-block w-100" src="images/Seguros.png" alt="Gestión de Seguros">
+              <img src="images/Seguros.png" class="d-block w-100 img-fluid" alt="Gestión de Seguros">
             </a>
-          </div>                     
+          </div>          
           <div class="carousel-item">
             <a href="estacionamiento.html">
-              <img class="d-block w-100" src="images/Estacionamiento.png" alt="Gestión de Estacionamiento">
+              <img src="images/Estacionamiento.png" class="d-block w-100 img-fluid" alt="Gestión de Estacionamiento">
             </a>
-          </div>                                                                   
+          </div>          
         </div>
-        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+        
+        <a class="carousel-control-prev" href="#carouselControls" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Anterior</span>
         </a>
-        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselControls" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Siguiente</span>
-        </a>        
+          <span class="sr-only">Siguiente</span>          
+        </a>
       </div>
       <br>
       <div class="d-flex flex-wrap flex-flow-reverse">      
@@ -189,17 +205,13 @@
     </footer>
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- build:js dist/index.css -->    
-    <script src="node_modules/jQuery/dist/jQuery.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
     <script>
       $(function(){
         $("[data-toggle='tooltip']").tooltip();
         $("[data-toggle='popover']").popover();
         $('.carousel').carousel({
-          interval: 5000
+          interval: 2000
         });              
         $('#contacto').on('show.bs.modal',function (e){
           console.log('el modal se esta mostrando');
