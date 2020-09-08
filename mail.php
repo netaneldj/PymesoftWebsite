@@ -5,7 +5,7 @@ $email = $_POST['email'];
 $telefono = $_POST['telefono'];
 $mensaje = $_POST['mensaje'];
 $to = "ventas@pymesoft.com.ar";
-$subject = "Consulta web de '.$nombre.' desde Pymesoft";
+$subject = "Consulta web de '$nombre.' desde Pymesoft";
 $headers =  'MIME-Version: 1.0' . "\r\n";
 $headers .= "From: $email\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
@@ -27,19 +27,16 @@ $body.='<tr style="vertical-align:top"><td><strong>Mensaje:</strong></td><td>'.$
 //$cuerpo.='<tr style="vertical-align:top"><td><strong>Consulta:</strong></td><td>'.htmlentities(utf8_decode($consulta)).'</td></tr>';
 $body.='</table></div>';
 $body.='</body></html>';
-mail($to, $subject, $body, $headers) or die("Error!");
-echo '<style>';
-include("css/styles.css");
-include("css/font-awesome.min.css");
-echo '</style>';
-
-echo '
-<form method="post">
-	<div class="row">
-	  <div class="col-6 col-12-xsmall">
-		<h2 class="titulo"><b>Muchas gracias '.$nombre.'</b></h2><br />
-		<p class="informacion">Hemos recibido tu consulta. A la brevedad nos pondremos en contacto con vos.</p>
-	  </div>
-	</div>
-</form>';
+$mail_status = mail($to, $subject, $body, $headers);
+if($mail_status == true){
+	echo "<script>
+	alert('Muchas gracias! Hemos recibido tu consulta. A la brevedad nos pondremos en contacto con vos.');
+	window.location.href='index.html';
+	</script>";	
+}else{
+	echo "<script>
+	alert('Error al enviar el email! Por favor intenta de nuevo.');
+	window.location.href='contacto.html';
+	</script>";		
+}
 ?>
