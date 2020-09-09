@@ -5,7 +5,7 @@ $email = $_POST['email'];
 $telefono = $_POST['telefono'];
 $mensaje = $_POST['mensaje'];
 $to = "ventas@pymesoft.com.ar";
-$subject = "Consulta web de '$nombre.' desde Pymesoft";
+$subject = "Consulta web de $nombre desde Pymesoft";
 $headers =  'MIME-Version: 1.0' . "\r\n";
 $headers .= "From: $email\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
@@ -28,15 +28,16 @@ $body.='<tr style="vertical-align:top"><td><strong>Mensaje:</strong></td><td>'.$
 $body.='</table></div>';
 $body.='</body></html>';
 $mail_status = mail($to, $subject, $body, $headers);
-if($mail_status == true){
+
+if( $mail_status == true) {
 	echo "<script>
-	alert('Muchas gracias! Hemos recibido tu consulta. A la brevedad nos pondremos en contacto con vos.');
+	alert('Su consulta ha sido enviada correctamente');
 	window.location.href='index.html';
-	</script>";	
-}else{
-	echo "<script>
-	alert('Error al enviar el email! Por favor intenta de nuevo.');
-	window.location.href='contacto.html';
 	</script>";		
+} else {
+	echo "<script>
+	alert('Error al enviar la consulta. Por favor intente de nuevo');
+	window.location.href='contacto.html';
+	</script>";	
 }
 ?>
